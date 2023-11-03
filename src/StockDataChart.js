@@ -34,8 +34,8 @@ class StockDataChart extends Component {
     Promise.all(
       stockTickers.map((ticker) =>
         axios.get(
-          // `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=IBM&outputsize=full&apikey=demo`
-          `https://www.alphavantage.co/query?function=${apiFunction}&symbol=${ticker}&outputsize=full&apikey=${apiKey}`
+          `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=IBM&outputsize=full&apikey=demo`
+          // `https://www.alphavantage.co/query?function=${apiFunction}&symbol=${ticker}&outputsize=full&apikey=${apiKey}`
         )
       )
     )
